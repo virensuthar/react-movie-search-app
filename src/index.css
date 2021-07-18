@@ -1,13 +1,79 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fahkwang:wght@500;700&display=swap");
+
+* {
+	box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "DM Sans", sans-serif;
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+/* Navbar.js styling */
+
+.navbar {
+	padding: 10px 20px;
+	display: flex;
+	align-items: center;
+	max-width: 1200px;
+	margin: 0 auto;
+	border-bottom: 1px solid #e2e2e2;
+}
+.navbar h1 {
+	color: #f1356d;
+	font-family: "Fahkwang", sans-serif;
+}
+.navbar .links {
+	margin-left: auto;
+}
+.navbar a {
+	margin-left: 16px;
+	text-decoration: none;
+	padding: 6px;
+}
+.navbar a:hover {
+	color: #f1356d;
+}
+
+/* SearchMovie.js styling */
+
+.search_form {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin: 16px;
+}
+
+.search_box {
+	min-width: 360px;
+	padding: 10px;
+	margin: 10px 0;
+	border: 1px solid #838383;
+	box-sizing: border-box;
+	border-radius: 5px;
+}
+.search_btn {
+	background: #f1356d;
+	color: #fff;
+	border: 1px solid #f1356d;
+	padding: 10px;
+	border-radius: 5px;
+	margin-left: 6px;
+	cursor: pointer;
+}
+
+.container {
+	padding: 16px 20px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+/* MovieCard.js */
+
+.poster {
+	max-width: 300px;
+	object-fit: cover;
 }
