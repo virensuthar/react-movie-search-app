@@ -65,15 +65,59 @@ body {
 	cursor: pointer;
 }
 
+@media (max-width: 520px) {
+	.search_box {
+		min-width: 300px;
+	}
+	.search_btn {
+		display: block;
+		width: 100%;
+		margin-left: 0;
+	}
+}
+
 .container {
-	padding: 16px 20px;
+	padding: 32px 20px 16px;
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 1rem;
+	row-gap: 2rem;
+	justify-items: center;
 }
 
 /* MovieCard.js */
 
+.movie_card {
+	max-width: 300px;
+	border: 1px solid #f1356d;
+	border-radius: 10px;
+	overflow: hidden;
+	padding: 0;
+}
+
 .poster {
 	max-width: 300px;
 	object-fit: cover;
+}
+.card_body {
+	padding: 20px;
+}
+
+h3 {
+	margin-top: 12px;
+}
+.star {
+	color: #f5c518;
+}
+
+/* ReadMore.js styling */
+
+.text {
+	display: inline;
+	width: 100%;
+}
+
+.read-or-hide {
+	color: #f1356d;
+	cursor: pointer;
 }
