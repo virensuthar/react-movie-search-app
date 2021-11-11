@@ -7,7 +7,9 @@ function Navbar() {
 				<i className="bi bi-tv"></i> MovieFind
 			</h1>
 			<div className="links">
-				<a href="/">About</a>
+				<a href="/" className="login_btn">
+					About
+				</a>
 			</div>
 		</div>
 	);

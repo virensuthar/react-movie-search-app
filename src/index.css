@@ -10,6 +10,7 @@ body {
 	font-family: "DM Sans", sans-serif;
 	max-width: 1440px;
 	margin: 0 auto;
+	color: #111;
 }
 
 /* Navbar.js styling */
@@ -33,9 +34,19 @@ body {
 	margin-left: 16px;
 	text-decoration: none;
 	padding: 6px;
+	color: #111;
 }
 .navbar a:hover {
 	color: #f1356d;
+}
+
+.login_btn {
+	border: 1px solid #111;
+	border-radius: 5px;
+	padding: 5px;
+}
+.login_btn:hover {
+	border: 1px solid #f1356d;
 }
 
 /* SearchMovie.js styling */
