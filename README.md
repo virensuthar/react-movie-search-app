@@ -4,7 +4,7 @@
 
 ## Link - [React-movie-search-app](https://react-movie-search-app-rho.vercel.app/)
 
-![home-page](\public\home-image.png)
+![home-page](/public/home-image.png)
 
 ### to start project
 
